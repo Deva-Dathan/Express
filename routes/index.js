@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Koder Cafe',name : 'Deva' });
+
+  const value = ['A','B','C','D']
+
+  const person = {name:"devan",comments:{content:"this is a another comment",date:"26-02-2000"}}
+
+  res.render('index',{person});
 });
 
 module.exports = router;
