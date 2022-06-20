@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
 
   const value = ['A','B','C','D']
 
-  const person = {name:"devan",comments:{content:"this is a another comment",date:"26-02-2000"}}
+  const person = {name:"devan",comments:{content:"this is a another comment",date:"26-02-2000"},admin:false}
 
   res.render('index',{person});
 });

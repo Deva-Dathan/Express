@@ -1,1 +1,9 @@
 <h1>{{person.comments.content}}</h1>
+{{#if person.admin}}
+
+<h1>This is Admin page</h1>
+
+{{else}}                    {{!If Else statement in hbs}}
+
+<h1>This is User page</h1>
+{{/if}}
