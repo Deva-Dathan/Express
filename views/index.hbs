@@ -7,3 +7,11 @@
 
 <h1>This is User page</h1>
 {{/if}}
+
+
+
+{{#with person}}
+{{#with comments}}
+<h1>{{content}}</h1>        {{!with keyword in hbs}}
+{{/with}}
+{{/with}}
